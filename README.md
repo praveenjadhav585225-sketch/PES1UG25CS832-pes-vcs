@@ -1,4 +1,57 @@
-# Building PES-VCS — A Version Control System from Scratch
+# PES-VCS Lab Report
+
+Name: Praveen Jadhav  
+SRN: PES1UG25CS832  
+
+---
+
+## 📸 Screenshots
+
+### Screenshot 1A – test_objects Output
+![1A](screenshots/1A – test_objects Output.png)
+
+### Screenshot 1B – Object Store Structure
+![1B](screenshots/1B – Object Store Structure.png)
+
+### Screenshot 2A – test_tree Output
+![2A](screenshots/2A – test_tree Output.png)
+
+### Screenshot 2B – Raw Object (Hex Dump)
+![2B](screenshots/2B – Raw Object (Hex Dump).png)
+
+### Screenshot 3B – Index File Contents
+![3B](screenshots/3B – Index File Contents.png)
+
+### Screenshot 4A – Commit Log
+![4A](screenshots/4A – Commit Log.png)
+
+### Screenshot 4B – Object Store Growth
+![4B](screenshots/4B – Object Store Growth.png)
+
+### Screenshot 4C – HEAD and Branch
+![4C](screenshots/4C – HEAD and Branch.png)
+
+### Final Screenshot – Integration Test
+![Final](screenshots/Integration Test Output.png)
+
+---
+
+## ✍️ Analysis Questions
+
+### Q5.1
+Checkout updates the HEAD to point to another branch and modifies the working directory to match that branch’s snapshot. It is complex due to handling file conflicts.
+
+### Q5.2
+Compare the index with the working directory. If there are differences in tracked files, prevent checkout to avoid overwriting changes.
+
+### Q5.3
+Detached HEAD means commits are not attached to a branch. These commits can be recovered using their hash or by creating a new branch.
+
+### Q6.1
+Start from HEAD and traverse all commits recursively. Mark reachable objects using a set or hash table, and delete unreferenced objects.
+
+### Q6.2
+Garbage collection may delete objects while a commit is in progress, causing data loss. Git avoids this using locking mechanisms and safe cleanup strategies.# Building PES-VCS — A Version Control System from Scratch
 
 **Objective:** Build a local version control system that tracks file changes, stores snapshots efficiently, and supports commit history. Every component maps directly to operating system and filesystem concepts.
 
