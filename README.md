@@ -19,6 +19,9 @@ SRN: PES1UG25CS832
 ### Screenshot 2B – Raw Object (Hex Dump)
 ![2B](screenshots/2B – Raw Object (Hex Dump).png)
 
+### Screenshot 3A – pes init, add, status
+![3A](screenshots/3A – pes init, add, status.png)
+
 ### Screenshot 3B – Index File Contents
 ![3B](screenshots/3B – Index File Contents.png)
 
